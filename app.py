@@ -5,7 +5,7 @@ import uuid
 
 app = Flask(__name__)
 
-
+ app.secret_key = 'your_secret_key'
 DOWNLOAD_FOLDER = 'downloads'
 if not os.path.exists(DOWNLOAD_FOLDER):
     os.makedirs(DOWNLOAD_FOLDER)
